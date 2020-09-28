@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "assignment7.h"
 int main(){
 	int n;
 	printf("Nhap n=");
@@ -10,16 +11,10 @@ int main(){
 		// thay vi nhap cho arr[i], nhap gt cho x, sau 
 		//do kiem tra x co nam trong mang hay chua
 		bool flag;
-		do{
-			flag = false;
+		do{	
 			printf("Nhap gia tri arr[%d]: ",i);
 			scanf("%d",&x);
-			for(int j=0;j<i;j++){
-				if(arr[j]==x){
-					flag = true;
-					break;
-				}
-			}
+			flag = TimKiem(arr,i,x);
 			if(flag == false){
 				arr[i] = x;
 			}

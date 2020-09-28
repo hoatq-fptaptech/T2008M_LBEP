@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "assignment7.h"
 int main(){
 	int n;
 	printf("Nhap n=");
@@ -10,13 +11,8 @@ int main(){
 		printf("arr[%d]=",i);
 		scanf("%d",&arr[i]);
 		for(int j=0;j<i;j++){
-			for(int k=0;k<i-j;k++){
-				if(arr[k]>arr[k+1]){
-					int tmp = arr[k];
-					arr[k]= arr[k+1];
-					arr[k+1] = tmp;
-				}
-			}
+			// sap xep mang con co i+1 gia tri
+			SapXepMang2(arr,i+1);
 		}
 	}
 	printf("mang sau khi nhap:\n");

@@ -11,7 +11,7 @@ int main(){
 		// thay vi nhap cho arr[i], nhap gt cho x, sau 
 		//do kiem tra x co nam trong mang hay chua
 		bool flag;
-		do{	
+		do{	 
 			printf("Nhap gia tri arr[%d]: ",i);
 			scanf("%d",&x);
 			flag = TimKiem(arr,i,x);

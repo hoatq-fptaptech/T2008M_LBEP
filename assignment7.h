@@ -28,3 +28,15 @@ bool TimKiem(int arr[],int n,int x){
 	}
 	return false;
 }
+
+void NhapGTMang(int arr[],int n){
+	for(int i=0;i<n;i++){
+		printf("Nhap arr[%d]=",i);
+		scanf("%d",&arr[i]);
+	}
+}
+void InMang(int arr[],int n){
+	for(int i=0;i<n;i++){
+		printf("%5d",arr[i]);
+	}
+}

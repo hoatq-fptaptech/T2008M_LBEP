@@ -8,7 +8,7 @@ int main(){
 	p = (int *)malloc(n*sizeof(int));
 	NhapMang(p,n);
 	SapXepMang(p,n);
-	p = (int *)realloc(p,2*n*sizeof(int));
+	p = (int *)realloc(p,2*n*sizeof(int)); 
 	printf("Nhap tiep:\n");
 	for(int i=n;i<2*n;i++){
 		printf("Nhap pt thu %d: ",i);

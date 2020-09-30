@@ -5,7 +5,8 @@ int main(){
 	int *p,n;
 	printf("Nhap n= ");
 	scanf("%d",&n);
-	p = (int *)malloc(n*sizeof(int));
+	//p = (int *)malloc(n*sizeof(int));
+	p = (int *)calloc(n,sizeof(int));// tuong tu malloc
 	NhapMang(p,n);
 	SapXepMang(p,n);
 	p = (int *)realloc(p,2*n*sizeof(int)); 

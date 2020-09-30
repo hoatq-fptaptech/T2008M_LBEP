@@ -14,7 +14,7 @@ int main(){
 	}
 	
 	for(int i=0;i<10;i++){
-		printf("%5d",*(p+i));
+		printf("%5d",*(p+i)); 
 	}
 	free(p);// giai phong o nho
 	// neu ko can dung p nua
